@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Güney Mağaza Dekorasyon</title>
+
+    <!-- SEO uyumlu font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Güney Mağaza Dekorasyon Logosu" />
+        </a>
+      </div>
+
+      <nav>
+        <a href="rafsistemleri.html">Raf Sistemleri</a>
+        <a href="ortasistemleri.html">Orta Sistemleri</a>
+        <a href="standlar.html">Standlar</a>
+
+        <div class="dropdown">
+          <a href="#">Mankenler</a>
+          <div class="dropdown-menu">
+            <a href="terzimanken.html">Terzi Mankeni</a>
+            <a href="plastikmanken.html">Plastik Manken</a>
+            <a href="polyestermanken.html">Polyester Manken</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Askılar</a>
+          <div class="dropdown-menu">
+            <a href="plastikaskılar.html">Plastik Askı</a>
+            <a href="ahsapaskılar.html">Ahşap Askı</a>
+          </div>
+        </div>
+
+        <a href="projeler.html">Projelerimiz</a>
+        <a href="hakkımızda.html">Hakkımızda</a>
+        <a href="iletişim.html">İletişim</a>
+      </nav>
+
+      <a href="https://wa.me/905322919277" target="_blank" class="whatsapp-btn">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+          alt="WhatsApp"
+        />
+        WhatsApp
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobile-nav">
+      <button class="close-btn" id="close-btn">&times;</button>
+
+      <a href="rafsistemleri.html">Raf Sistemleri</a>
+      <a href="ortasistemleri.html">Orta Sistemleri</a>
+      <a href="standlar.html">Standlar</a>
+
+      <a href="#" id="mankenler-btn"
+        >Mankenler <span class="plus-btn" id="plus">+</span></a
+      >
+      <div class="submenu" id="submenu">
+        <a href="terzimanken.html">Terzi Mankeni</a>
+        <a href="plastikmanken.html">Plastik Manken</a>
+        <a href="polyestermanken.html">Polyester Manken</a>
+      </div>
+
+      <a href="askılar.html">Askılar</a>
+      <a href="projeler.html">Projelerimiz</a>
+      <a href="hakkımızda.html">Hakkımızda</a>
+      <a href="iletişim.html">İletişim</a>
+
+      <div class="mobile-whatsapp">
+        <button onclick="window.open('https://wa.me/905322919277','_blank')">
+          WhatsApp ile İletişime Geç
+        </button>
+      </div>
+    </div>
+
+    <section class="hero-slider">
+      <div class="slides">
+        <div
+          class="slide active"
+          style="background-image: url('images/slider/1.jpg')"
+        >
+          <div class="overlay"></div>
+          <div class="content">
+            <h2>Güney Mağaza Dekorasyon</h2>
+            <p>Modern raf sistemleri, şık tasarımlar.</p>
+            <a href="#katagoriler" class="btn">Keşfet</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('images/slider/2.jpg')">
+          <div class="overlay"></div>
+          <div class="content">
+            <h2>Mağazanı Baştan Yarat</h2>
+            <p>Manken, askı ve raf çözümlerinde profesyonellik.</p>
+            <a href="#hizmetler" class="btn">Detaylar</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('images/slider/3.jpg')">
+          <div class="overlay"></div>
+          <div class="content">
+            <h2>Estetik ve Dayanıklılık</h2>
+            <p>Her mağaza için özel dekorasyon çözümleri.</p>
+            <a href="#iletisim" class="btn">İletişime Geç</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('images/slider/4.jpg')">
+          <div class="overlay"></div>
+          <div class="content">
+            <h2>Görselliği Güçlendir</h2>
+            <p>Profesyonel mağaza vitrinleri ve tasarımlar.</p>
+            <a href="#blog" class="btn">Blogu Oku</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kontroller -->
+      <div class="controls">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+
+      <!-- Noktalar -->
+      <div class="dots"></div>
+    </section>
+
+    <section class="categories">
+      <div class="category">
+        <img src="images/katagoriler/1.png" alt="Terzi Mankenleri" />
+        <div class="overlay"><span>Terzi Mankenleri</span></div>
+      </div>
+      <div class="category">
+        <img src="images/katagoriler/2.png" alt="Plastik Mankenler" />
+        <div class="overlay"><span>Plastik Mankenler</span></div>
+      </div>
+      <div class="category">
+        <img src="images/katagoriler/3.png" alt="Polyester Mankenler" />
+        <div class="overlay"><span>Polyester Mankenler</span></div>
+      </div>
+      <div class="category">
+        <img src="images/katagoriler/4.png" alt="Raf Sistemleri" />
+        <div class="overlay"><span>Raf Sistemleri</span></div>
+      </div>
+      <div class="category">
+        <img src="images/katagoriler/5.png" alt="Mağaza Dekorasyonları" />
+        <div class="overlay"><span>Mağaza Dekorasyonları</span></div>
+      </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

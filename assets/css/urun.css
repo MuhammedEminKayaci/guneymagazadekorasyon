@@ -1,0 +1,554 @@
+  body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #fff;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* Ürün alanı */
+    .product-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+      align-items: start;
+      margin-top: 80px;
+    }
+
+    .product-image {
+      flex: 1;
+      min-width: 300px;
+      max-width: 550px;
+      position: relative;
+    }
+
+    .product-image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      cursor: zoom-in;
+      transition: transform 0.3s ease;
+    }
+
+    .product-image img:hover {
+      transform: scale(1.03);
+    }
+
+    .product-info {
+      flex: 1;
+      max-width: 550px;
+    }
+
+    .product-info h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .product-info p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .buttons button {
+      border: none;
+      border-radius: 8px;
+      padding: 14px 26px;
+      cursor: pointer;
+      font-size: 1rem;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp {
+      background-color: #b40000;
+    }
+
+    .whatsapp:hover {
+      background-color: #700000;
+    }
+
+    .call {
+      background-color: #003b7a;
+    }
+
+    .call:hover {
+      background-color: #001022;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      padding-top: 40px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .lightbox-content {
+      margin: auto;
+      display: block;
+      max-width: 100%;
+      border-radius: 15px;
+    }
+
+    .close-lightbox {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      color: white;
+      font-size: 40px;
+      cursor: pointer;
+    }
+
+    /* İlginizi çekebilir */
+    .related-section {
+      margin-top: 100px;
+    }
+
+    .related-section h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    .related-slider {
+      display: flex;
+      gap: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .related-track {
+      display: flex;
+      gap: 20px;
+      animation: scroll 30s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .related-item {
+      min-width: 230px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .related-item:hover {
+      transform: translateY(-6px);
+    }
+
+    .related-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .related-item p {
+      margin: 12px 0 16px;
+      font-weight: 500;
+    }
+
+    /* Yorumlar */
+    .reviews {
+      margin-top: 100px;
+      background: #fafafa;
+      padding: 80px 20px;
+      border-radius: 30px 30px 0 0;
+    }
+
+    .reviews h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1.8rem;
+    }
+
+    .review-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .review-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 340px;
+      flex: 1;
+      min-width: 250px;
+      transition: transform 0.3s ease;
+    }
+
+    .review-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .review-card p {
+      font-style: italic;
+      color: #444;
+    }
+
+    .review-card b {
+      display: block;
+      margin-top: 10px;
+      color: #000;
+    }
+
+    @media(max-width: 768px) {
+      .product-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .related-item {
+        min-width: 180px;
+      }
+    }
+
+
+    :root {
+  --primary: #b40000;
+  --bg-dark: #0f0f0f;
+  --bg-light: #1b1b1b;
+  --text: #ffffff;
+  --transition: all 0.3s ease;
+  --header-height: 75px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: var(--header-height);
+  background: var(--bg-dark);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px; /* Sabit yükseklik — header yüksekliğiyle orantılı */
+  width: auto; /* Genişlik oranı korur */
+  object-fit: contain; /* Görsel taşmadan oturur */
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05); /* Hafif büyüme efekti */
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 50px; /* Mobilde biraz daha küçük */
+  }
+}
+
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* --- DROPDOWN --- */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 225%;
+  left: 0;
+  background: var(--bg-light);
+  border-radius: 0px;
+  min-width: 230px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: var(--transition);
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 18px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: var(--transition);
+}
+
+.dropdown-menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--primary);
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+/* --- WHATSAPP BUTON --- */
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.whatsapp-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.whatsapp-btn:hover {
+  background: #700000;
+  transform: scale(1.03);
+}
+
+/* --- HAMBURGER --- */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1100;
+}
+
+.menu-toggle span {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* --- MOBILE NAV --- */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transform: translateY(-100%);
+  transition: var(--transition);
+  z-index: 1000;
+  padding-top: 100px;
+}
+
+.mobile-nav.active {
+  transform: translateY(0);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-nav a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+  width: 80%;
+  text-align: left;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav .submenu {
+  display: none;
+  flex-direction: column;
+  width: 75%;
+  margin-left: 20px;
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-nav .submenu a {
+  font-size: 1rem;
+  padding: 10px 0;
+  border: none;
+}
+
+.mobile-nav .submenu.active {
+  display: flex;
+}
+
+.plus-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  transition: var(--transition);
+}
+
+.plus-btn.rotate {
+  transform: rotate(45deg);
+  color: var(--primary);
+}
+
+.mobile-whatsapp {
+  margin-top: 40px;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.mobile-whatsapp img {
+  width: 20px;
+  height: 20px;
+}
+
+.mobile-whatsapp:hover {
+  background: #700000;
+}
+
+.mobile-whatsapp {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.mobile-whatsapp button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 90%;
+  transition: background 0.3s;
+}
+
+.mobile-whatsapp button:hover {
+  background: #700000;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+  nav,
+  .whatsapp-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+}
+
+.related-item {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.related-item:hover {
+  transform: scale(1.05);
+}
+

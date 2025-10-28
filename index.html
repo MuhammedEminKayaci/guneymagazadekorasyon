@@ -10,6 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
@@ -167,6 +170,329 @@
       </div>
     </section>
 
-    <script src="assets/js/script.js"></script>
-  </body>
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-box">
+                <i class="fas fa-users"></i>
+                <h3 class="stat-number" data-target="25">0</h3>
+                <p class="stat-text">Deneyimli Usta Ekip</p>
+            </div>
+            
+            <div class="stat-box">
+                <i class="fas fa-star"></i>
+                <h3 class="stat-number" data-target="10">0</h3>
+                <p class="stat-text">Yılların Tecrübesi</p>
+            </div>
+            
+            <div class="stat-box">
+                <i class="fas fa-check-circle"></i>
+                <h3 class="stat-number" data-target="500">0</h3>
+                <p class="stat-text">Tamamlanan Proje</p>
+            </div>
+            
+            <div class="stat-box">
+                <i class="fas fa-heart"></i>
+                <h3 class="stat-number" data-target="100">0</h3>
+                <p class="stat-text">Müşteri Memnuniyeti</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+<section class="about">
+  <div class="about-container">
+    <div class="about-media">
+      <div class="about-photo main">
+        <img src="images/slider/1.jpg" alt="Atölyemizden bir kare" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="about-photo small">
+        <img src="images/slider/2.jpg" alt="Montaj ekibimiz iş başında" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="about-badge badge-top">
+        <i class="fas fa-award"></i>
+        <span>10+ Yıl Tecrübe</span>
+      </div>
+      <div class="about-badge badge-bottom">
+        <i class="fas fa-people-group"></i>
+        <span>25 Usta Ekip</span>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <h2>Hakkımızda</h2>
+      <p>
+        Güney Mağaza Dekorasyon olarak; mağaza içi raf, orta sistem ve stand üretiminde
+        uçtan uca tasarım, üretim ve montaj hizmeti veriyoruz. Dayanıklı malzeme,
+        işlevsel tasarım ve zamanında teslim ilkeleriyle çalışıyoruz.
+      </p>
+
+      <ul class="about-list">
+        <li><i class="fas fa-check"></i> Ölçüye özel tasarım ve projelendirme</li>
+        <li><i class="fas fa-check"></i> Yerinde keşif ve ücretsiz danışmanlık</li>
+        <li><i class="fas fa-check"></i> Hızlı üretim ve profesyonel montaj</li>
+      </ul>
+
+      <div class="about-features">
+        <div class="feature">
+          <i class="fas fa-ruler-combined"></i>
+          <span>Ölçüye Özel</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-truck-fast"></i>
+          <span>Hızlı Teslim</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-screwdriver-wrench"></i>
+          <span>Usta Montaj</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-shield-heart"></i>
+          <span>Dayanıklı Malzeme</span>
+        </div>
+      </div>
+
+      <div class="about-cta">
+        <a href="hakkımızda.html" class="btn-small">Detayları Gör</a>
+        <a href="https://wa.me/905322919277" target="_blank" class="btn-link">
+          <i class="fab fa-whatsapp"></i> Teklif Al
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-highlights">
+    <div class="highlight">
+      <i class="fas fa-certificate"></i>
+      <h4>Garanti</h4>
+      <p>Ürün ve işçilikte 2 yıl garanti.</p>
+    </div>
+    <div class="highlight">
+      <i class="fas fa-handshake-angle"></i>
+      <h4>Destek</h4>
+      <p>Satış sonrası hızlı destek.</p>
+    </div>
+    <div class="highlight">
+      <i class="fas fa-seedling"></i>
+      <h4>Sürdürülebilir</h4>
+      <p>Uzun ömürlü, az bakım gerektiren çözümler.</p>
+    </div>
+  </div>
+</section>
+
+<section class="projects">
+  <div class="project-container">
+    <div class="project-slider">
+      <div class="project-slide">
+        <div class="project-image">
+          <img src="images/slider/1.jpg" alt="Proje 1" loading="lazy" decoding="async">
+          <div class="project-review">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Mağazamızın dekorasyonunda gösterdikleri profesyonellik ve titizlik için teşekkür ederiz."</p>
+            <span class="review-author">- Tekstil Mağazası, İstanbul</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-slide">
+        <div class="project-image">
+          <img src="images/slider/2.jpg" alt="Proje 2" loading="lazy" decoding="async">
+          <div class="project-review">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Zamanında ve titizlikle teslim ettiler. Raf sistemleri çok kullanışlı."</p>
+            <span class="review-author">- Ayakkabı Mağazası, Ankara</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-slide">
+        <div class="project-image">
+          <img src="images/slider/3.jpg" alt="Proje 3" loading="lazy" decoding="async">
+          <div class="project-review">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Vitrin tasarımı satışlarımızı olumlu etkiledi. Teşekkürler."</p>
+            <span class="review-author">- Butik, İzmir</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-slide">
+        <div class="project-image">
+          <img src="images/slider/4.jpg" alt="Proje 4" loading="lazy" decoding="async">
+          <div class="project-review">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Montaj ekibi çok düzenli çalıştı, sonuç mükemmel."</p>
+            <span class="review-author">- Market, Bursa</span>
+          </div>
+        </div>
+      </div>
+
+    <button class="project-nav prev" aria-label="Önceki proje">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="project-nav next" aria-label="Sonraki proje">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <div class="projects-cta">
+  <a href="projeler.html" class="btn-small" aria-label="Tüm projelerimizi gör">Tüm Projelerimizi Gör</a>
+</div>
+
+</section>
+
+<section class="faq" id="sss">
+  <div class="faq-container">
+    <div class="faq-media">
+      <img src="images/slider/1.jpg" alt="Üretim ve montaj sürecimiz" loading="lazy" decoding="async" />
+      <div class="faq-badge">
+        <i class="fas fa-circle-question"></i>
+        <span>Sıkça Sorulan Sorular</span>
+      </div>
+    </div>
+
+    <div class="faq-content">
+      <h2>Sıkça Sorulan Sorular</h2>
+      <p class="faq-intro">Sipariş, üretim ve montaj süreçlerimiz hakkında merak ettikleriniz.</p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-1" id="faq-q-1">
+            <i class="fas fa-box-open"></i>
+            Üretim süreci ne kadar sürüyor?
+            <span class="chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer" id="faq-1" role="region" aria-labelledby="faq-q-1">
+            <p>Keşif ve onay sonrası ortalama 7–15 gün içinde üretimi tamamlayıp montaja başlıyoruz. Proje kapsamına göre süre değişebilir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-2" id="faq-q-2">
+            <i class="fas fa-truck-fast"></i>
+            Türkiye geneline hizmet veriyor musunuz?
+            <span class="chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer" id="faq-2" role="region" aria-labelledby="faq-q-2">
+            <p>Evet. Lojistik ve montaj ekibimizle Türkiye’nin her iline kurulum yapıyoruz.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-3" id="faq-q-3">
+            <i class="fas fa-ruler-combined"></i>
+            Keşif ve ölçüm hizmeti ücretli mi?
+            <span class="chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer" id="faq-3" role="region" aria-labelledby="faq-q-3">
+            <p>Merkez bölgelerde keşif ücretsizdir. Uzak lokasyonlar için yol maliyeti talep edilebilir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-4" id="faq-q-4">
+            <i class="fas fa-shield-heart"></i>
+            Ürünleriniz için garanti var mı?
+            <span class="chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-q-4">
+            <p>Ürün ve işçilikte 2 yıl garanti sunuyoruz. Montaj sonrası destek ekibimiz her zaman yanınızda.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-5" id="faq-q-5">
+            <i class="fas fa-sack-dollar"></i>
+            Ödeme koşullarınız neler?
+            <span class="chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer" id="faq-5" role="region" aria-labelledby="faq-q-5">
+            <p>Onayla birlikte kapora, üretim sonrası bakiye ve teslimde son ödeme şeklinde çalışıyoruz. Projeye göre esneklik sağlayabiliriz.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-6" id="faq-q-6">
+            <i class="fas fa-screwdriver-wrench"></i>
+            Montaj ortalama ne kadar sürer?
+            <span class="chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer" id="faq-6" role="region" aria-labelledby="faq-q-6">
+            <p>Proje büyüklüğüne göre 1–3 gün arasında tamamlanır. Mağaza operasyonunuzu aksatmadan planlarız.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-cta">
+        <a href="iletisim.html" class="btn-small">Yanıt Bulamadınız mı?</a>
+        <a href="https://wa.me/905322919277" class="btn-link" target="_blank">
+          <i class="fab fa-whatsapp"></i> Hemen Sorun
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-col brand">
+      <h3 class="footer-logo">Güney Mağaza Dekorasyon</h3>
+      <p>Mağaza içi raf, orta sistem ve stand üretiminde tasarımdan montaja anahtar teslim çözümler.</p>
+
+      <div class="social">
+        <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/905322919277" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col links">
+      <h4>Bağlantılar</h4>
+      <ul>
+        <li><a href="/">Ana Sayfa</a></li>
+        <li><a href="#projeler">Projelerimiz</a></li>
+        <li><a href="#hakkimizda">Hakkımızda</a></li>
+        <li><a href="#sss">SSS</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col contact">
+      <h4>İletişim</h4>
+      <ul>
+        <li><i class="fas fa-location-dot"></i><span>İstanbul, Türkiye</span></li>
+        <li><i class="fas fa-phone"></i><a href="tel:+905322919277">+90 532 291 92 77</a></li>
+        <li><i class="fas fa-envelope"></i><a href="mailto:info@guneydekorasyon.com">info@guneydekorasyon.com</a></li>
+        <li><i class="fas fa-clock"></i><span>Pzt–Cmt: 09.00–19.00</span></li>
+      </ul>
+    </div>
+
+   <div class="footer-col map">
+      <h4>Konum</h4>
+      <div id="footer-map" class="footer-map" aria-label="Harita"></div>
+      <a class="map-link" href="https://www.google.com/maps?q=41.013544,28.8814898" target="_blank" rel="noopener">Haritayı büyüt</a>
+    </div>
+  </div> <!-- .footer-container KAPATILDI -->
+
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Güney Mağaza Dekorasyon. Tüm hakları saklıdır.</span>
+    <div class="mini-links">
+      <a href="#">KVKK</a>
+      <a href="#">Çerez Politikası</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Leaflet JS (map) -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+<script src="assets/js/script.js"></script>
+</body>
 </html>
+
+
